@@ -15,12 +15,12 @@ footer {
 h1 {
   text-align: center;
   font-size: 3em;
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", Times New Roman, serif;
   margin-left: 100px;
 }
 h2 {
   font-size: 1.8em;
-  font-family: "Playfair Display";
+  font-family: "Playfair Display", Times New Roman, serif;
 }
 p {
   padding: 5px;
