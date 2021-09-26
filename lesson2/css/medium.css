@@ -2,4 +2,7 @@
   main {
     grid-template-columns: 1fr 1fr;
   }
+  .link {
+    font-size: 1.3em;
+  }
 }
