@@ -1,0 +1,114 @@
+body {
+  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #e3eaf1;
+}
+footer {
+  background-color: hsl(204, 46%, 79%);
+  padding: 5px;
+}
+h1 {
+  text-align: center;
+  font-size: 2.3em;
+  color: #e65106;
+}
+h2 {
+  text-align: center;
+  font-size: 1.7em;
+  color: #023047;
+}
+h3 {
+  font-size: 1.4em;
+}
+.name {
+  color: #e65106;
+}
+p {
+  font-size: 1.3em;
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+  text-indent: 1.5em;
+}
+.footer-text {
+  font-size: 4vw;
+  text-align: center;
+}
+nav {
+  background-color: hsl(204, 46%, 79%);
+  text-align: center;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav ul li a {
+  display: block;
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 1.3em;
+  color: black;
+}
+
+nav ul li:hover {
+  background-color: rgb(18, 63, 107);
+}
+nav ul li a:hover {
+  color: white;
+}
+.logo {
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+.personas {
+  text-indent: 0;
+}
+.scenarios {
+  font-size: 1.3em;
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+}
+table {
+  width: 80%;
+  border: 1px solid #000;
+  margin: 5px auto;
+}
+td {
+  width: 25%;
+  height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #000;
+  border-collapse: collapse;
+  padding: 0.3em;
+  font-size: 6vw;
+}
+#colorone {
+  background-color: #0c64b4;
+}
+#colortwo {
+  background-color: #e65106;
+}
+#colorthree {
+  background-color: #023047;
+}
+#h-example {
+  font-family: "Lora", serif;
+  color: #000;
+}
+#p-example {
+  font-family: "Open Sans", sans-serif;
+}
+div {
+  margin-bottom: 5em;
+}
+.link {
+  font-size: 4vw;
+}
