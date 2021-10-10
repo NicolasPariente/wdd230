@@ -53,6 +53,7 @@ p {
 a {
   color: white;
 }
+
 #logo-image {
   max-width: 100%;
 }
@@ -85,7 +86,7 @@ nav {
   color: black;
   font-weight: 700;
   transition: 0.5s;
-  font-family: "Lora", serif;
+  font-family: "Open Sans", sans-serif;
 }
 .navigation a:hover {
   color: white;
