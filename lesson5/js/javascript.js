@@ -1,21 +1,53 @@
-const input = document.querySelector("#favchap");
-const button = document.querySelector("#button");
-const list = document.querySelector(".list");
+function toggleMenu() {
+  document
+    .getElementsByClassName("navigation")[0]
+    .classList.toggle("responsive");
+}
 
-button.addEventListener("click", function () {
-  if (document.querySelector("#favchap").value != "") {
-    const item = document.createElement("li");
-    list.appendChild(item);
-    const text_of_input = document.querySelector("#favchap").value;
-    const text = document.createTextNode(text_of_input);
-    item.appendChild(text);
-    const delete_item = document.createElement("button");
-    item.appendChild(delete_item);
-    const button_text = document.createTextNode("❌");
-    delete_item.appendChild(button_text);
-    delete_item.addEventListener("click", function () {
-      item.parentNode.removeChild(item);
-    });
-    document.querySelector("#favchap").value = "";
-  }
-});
+var objToday = new Date(),
+  weekday = new Array(
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ),
+  dayOfWeek = weekday[objToday.getDay()],
+  domEnder = (function () {
+    var a = objToday;
+    if (/1/.test(parseInt((a + "").charAt(0)))) return "th";
+    a = parseInt((a + "").charAt(1));
+    return 1 == a ? "st" : 2 == a ? "nd" : 3 == a ? "rd" : "th";
+  })(),
+  dayOfMonth =
+    today + (objToday.getDate() < 10)
+      ? "0" + objToday.getDate() + domEnder
+      : objToday.getDate() + domEnder,
+  months = new Array(
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ),
+  curMonth = months[objToday.getMonth()],
+  curYear = objToday.getFullYear();
+
+var today = dayOfWeek + " " + dayOfMonth + " of " + curMonth + ", " + curYear;
+document.querySelector("#modify").textContent = today;
+
+const birthday = new Date();
+var day1 = birthday.getDay();
+if (day1 == 5) {
+  var change = document.getElementsByClassName("friday")[0];
+  change.style.display = "block";
+}
