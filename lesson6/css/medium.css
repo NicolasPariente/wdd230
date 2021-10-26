@@ -1,0 +1,90 @@
+@media only screen and (min-width: 32.5em) {
+  header {
+    height: 150px;
+  }
+  main {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  h1 {
+    font-size: 2.4em;
+    margin-top: 50px;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block; /* change state in small view */
+    flex: 1 1 auto;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+  .main-part {
+    font-size: 1.5em;
+    height: 30px;
+  }
+  .summary {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+    padding: 5px;
+  }
+  .flex {
+    display: flex;
+  }
+  .forecast {
+    display: block;
+    text-align: center;
+    margin: 20px;
+  }
+  .article {
+    width: 900px;
+    max-width: 85%;
+  }
+
+  .imgarticle {
+    width: 300px;
+    max-width: 100%;
+    float: right;
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  .map {
+    display: flex;
+    max-width: 90%;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .map_img {
+    flex: 1 1 auto;
+    max-width: 100%;
+  }
+  .map_img img {
+    max-width: 100%;
+  }
+  .map_info {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  .map_info h3 {
+    margin-top: 30px;
+    color: black;
+  }
+  .map_info p {
+    margin-top: 30px;
+    color: black;
+  }
+}
