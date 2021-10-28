@@ -223,7 +223,8 @@ main {
   color: black;
 }
 .navigation .active {
-  text-decoration: underline;
+  background-color: black;
+  color: white;
 }
 .friday {
   display: none;
