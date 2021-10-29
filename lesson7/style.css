@@ -1,0 +1,14 @@
+body {
+  display: grid;
+  text-align: center;
+}
+img {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
+img[data-src] {
+  filter: blur(0.2em);
+}
