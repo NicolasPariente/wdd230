@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Assignment Gallery Page for Nicolas Pariente in WDD 230: Web Frontend Development at Brigham Young University - Idaho" />
+    <title>Gallery Page BYUI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../lesson6/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../../lesson6/css/small.css" />
+    <link rel="stylesheet" type="text/css" href="../../lesson6/css/medium.css" />
+    <link rel="stylesheet" type="text/css" href="../../lesson6/css/large.css" />
+</head>
+  <body>
+   <div class="friday"><h2 class="friday2">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h2></div>
+    <header>
+        <img id="logo-image" src="images/weatherdownpour.jpg" alt="logo">
+        <div id="title">
+        <h1 class="title">Weather Downpour</h1>
+        <h3 class="title"> Unites borders</h3>
+        <!-- I commented that part because the motto is in the logo image-->
+        </div>
+      </header>
+      <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; MENU</a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PRESTON</a></li>
+            <li><a href="#">SODA SPRING</a></li>
+            <li><a href="#">FISH HAVEN</a></li>
+            <li><a href="#">STORM CENTER</a></li>
+            <li><a class="active" href="#">GALLERY</a></li>
+        </ul>
+      </nav>
+    <main>
+      <h2>Weather Gallery</h2>
+      <section class="gallery">
+        <div>
+            <picture><img src="images/placeholder.jpg" data-src="images/sunny.jpg" alt="sunny"></picture>
+            <h4>Sunny Weather</h4>
+        </div>
+        <div>
+            <picture><img src="images/placeholder.jpg" data-src="images/rainy.jpg" alt="rainy"></picture>
+            <h4>Rainy Weather</h4>
+        </div>
+        <div>
+            <picture><img src="images/placeholder.jpg" data-src="images/windy.jpg" alt="windy"></picture>
+            <h4>Windy Weather</h4>
+        </div>
+        <div>
+            <picture><img src="images/placeholder.jpg" data-src="images/stormy.jpg" alt="stormy"></picture>
+            <h4>Stormy Weather</h4>
+        </div>
+        <div>
+            <picture><img src="images/placeholder.jpg" data-src="images/snowy.jpg" alt="snowy"></picture>
+            <h4>Snowy Weather</h4>
+        </div>
+        <div>
+            <picture><img src="images/placeholder.jpg" data-src="images/foggy.jpg" alt="foggy"></picture>
+            <h4>Foggy Weather</h4>
+        </div>
+        <div>
+            <picture><img src="images/placeholder.jpg" data-src="images/hailing.jpg" alt="hailing"></picture>
+            <h4>Hailing Weather</h4>
+        </div>
+        <div>
+            <picture><img src="images/placeholder.jpg" data-src="images/hot.jpg" alt="hot"></picture>
+            <h4>Hot Weather</h4>
+        </div>
+        <div>
+            <picture><img src="images/placeholder.jpg" data-src="images/cold.jpg" alt="cold"></picture>
+            <h4>Cold Weather</h4>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <p>You visited this page <span class="daysbetween"></span> days ago</p> <br> <br>
+        <p>&copy;<span class="year"></span>|Nicolas Pariente|Uruguay|<a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
+        <p><span id="modify"></span></p>
+    </footer>
+    <script src="js/javascript.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/daysbetween.js"></script>
+  </body>
+</html>
+

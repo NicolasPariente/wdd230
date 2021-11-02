@@ -234,3 +234,29 @@ main {
   padding-top: 10px;
   padding-bottom: 40px;
 }
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+}
+.gallery div {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: rgb(0, 0, 0) 1px solid;
+}
+.gallery div img {
+  max-width: 100%;
+  width: 100%;
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+.gallery div h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.3em;
+}
+img[data-src] {
+  filter: blur(0.2em);
+}
