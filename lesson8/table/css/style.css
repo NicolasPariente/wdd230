@@ -9,6 +9,7 @@ table {
   letter-spacing: 1px;
   font-size: 0.8rem;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 td,
@@ -42,4 +43,13 @@ tr:nth-child(1) th {
   background-color: #7fb9c2;
   font-size: 0.7em;
   font-weight: bold;
+}
+@media only screen and (max-width: 32.5em) {
+  html {
+    font-size: 7vw;
+  }
+  td,
+  th {
+    padding: 2px 5px;
+  }
 }
