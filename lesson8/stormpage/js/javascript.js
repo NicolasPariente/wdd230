@@ -60,8 +60,7 @@ function check_Alpha(letters) {
   let regex = /[a-zA-Z]{5,30}/;
   if (regex.test(letters.name.value) == false) {
     alert("Your full name should have more than 5 characters and only letters");
-    console.log("It worked kind of ");
-    letters.fname.focus();
+    letters.name.focus();
     return false;
   }
 }
