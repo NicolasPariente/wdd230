@@ -1,0 +1,81 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+header {
+  margin-bottom: 50px;
+}
+h1,
+h2 {
+  text-align: center;
+  margin: 10px;
+  white-space: normal;
+  font-family: "Mochiy Pop P One", sans-serif;
+  color: rgb(148, 9, 9);
+}
+h3 {
+  font-family: "Mohave", sans-serif;
+}
+main {
+  margin: 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: 0 auto;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 100px;
+  max-width: 100%;
+  border: solid 1px #999;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: rgb(241, 239, 239);
+}
+section {
+  margin: 0 auto;
+  text-align: center;
+  border: solid 1px #999;
+  max-width: 100%;
+  width: 95%;
+  padding: 10px;
+  background-color: rgb(242, 241, 245);
+}
+img {
+  max-width: 100%;
+  width: 300px;
+}
+@media only screen and (max-width: 60em) {
+  div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  h1,
+  h2,
+  h3 {
+    font-size: 3vw;
+  }
+}
+@media only screen and (max-width: 32.5em) {
+  div {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+  section {
+    padding: 10px 0px 0px 0px;
+  }
+  h1,
+  h2,
+  h3 {
+    font-size: 5vw;
+  }
+  #title {
+    font-size: 1.4em;
+  }
+}
