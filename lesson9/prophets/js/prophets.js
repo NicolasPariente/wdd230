@@ -12,15 +12,15 @@ fetch(requestURL)
       let card = document.createElement("section");
 
       let h2 = document.createElement("h2");
-      h2.textContent = prophets[i].name + " " + prophets[i].lastname;
+      h2.textContent = `${prophets[i].name} ${prophets[i].lastname}`;
       card.appendChild(h2);
 
       let h3 = document.createElement("h3");
-      h3.textContent = "Date of Birth:" + " " + prophets[i].birthdate;
+      h3.textContent = `Date of Birth: ${prophets[i].birthdate}`;
       card.appendChild(h3);
 
       h3 = document.createElement("h3");
-      h3.textContent = "Place of Birth:" + " " + prophets[i].birthplace;
+      h3.textContent = `Place of Birth: ${prophets[i].birthplace}`;
       card.appendChild(h3);
 
       let img = document.createElement("img");

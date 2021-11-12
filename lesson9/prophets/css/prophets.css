@@ -21,6 +21,11 @@ main {
   width: auto;
   max-width: 100%;
 }
+footer {
+  text-align: center;
+  padding: 20px 0px 50px 0px;
+  font-size: 2vw;
+}
 div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -60,6 +65,9 @@ img {
   h3 {
     font-size: 3vw;
   }
+  footer {
+    font-size: 3vw;
+  }
 }
 @media only screen and (max-width: 32.5em) {
   div {
@@ -77,5 +85,8 @@ img {
   }
   #title {
     font-size: 1.4em;
+  }
+  footer {
+    font-size: 5vw;
   }
 }
