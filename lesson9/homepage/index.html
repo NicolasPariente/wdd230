@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Assignment Storm Center Page for Nicolas Pariente in WDD 230: Web Frontend Development at Brigham Young University - Idaho" />
-    <title>Storm Page BYUI</title>
+    <meta name="description" content="Assignment Home Page for Nicolas Pariente in WDD 230: Web Frontend Development at Brigham Young University - Idaho" />
+    <title>Home Page BYUI</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Open+Sans&display=swap" rel="stylesheet">
@@ -27,21 +27,35 @@
       <nav>
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; MENU</a></li>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">PRESTON</a></li>
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a href="../../lesson5/preston-5.html">PRESTON</a></li>
             <li><a href="#">SODA SPRING</a></li>
             <li><a href="#">FISH HAVEN</a></li>
-            <li><a class="active" href="stormcenter.html">STORM CENTER</a></li>
-            <li><a href="#">GALLERY</a></li>
+            <li><a href="../../lesson8/stormpage/stormcenter.html">STORM CENTER</a></li>
+            <li><a href="../../lesson7/gallery/gallery.html">GALLERY</a></li>
         </ul>
       </nav>
     <main>
-        
+      <div class="banner">
+        <picture>
+        <img class="hero" src="images/skyheroo.jpg" alt="hero">
+      </picture>
+      <div id="youtubebox">
+      <iframe id="youtube" src="https://www.youtube.com/embed/_9efA-fOQ5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="cards"></div>
+    <div class="info">
+      <h3>Contact Information</h3>
+      <p>+598 91854 775</p>
+      <p>hnpf2019@gmail.com</p>
+      <p></p>
+    </div>
     </main>
     <footer>
         <p>&copy;<span class="year"></span>|Nicolas Pariente|Uruguay|<a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
         <p><span id="modify"></span></p>
     </footer>
     <script src="js/javascript.js"></script>
+    <script src="js/json.js"></script>
   </body>
 </html>
