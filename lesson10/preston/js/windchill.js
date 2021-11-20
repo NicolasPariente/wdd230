@@ -49,8 +49,10 @@ fetch(apiURLforecast)
     console.log(list_correct_time);
     let list_of_temperatures = [];
     let list_of_images_src = [];
+    let list_of_images_desc = [];
     let temp = 0;
     let image = "";
+    let desc = "";
     for (let i = 0; i < list_correct_time.length; i++) {
       temp = list_correct_time[i].main.temp;
       temp = parseInt((9 / 5) * (temp - 273) + 32);
@@ -60,12 +62,17 @@ fetch(apiURLforecast)
         list_correct_time[i].weather[0].icon +
         ".png";
       list_of_images_src.push(image);
+      desc = list_correct_time[i].weather[0].description;
+      list_of_images_desc.push(desc);
     }
-    console.log(list_of_temperatures);
+    console.log(list_of_images_desc);
     document.querySelector(
       "#forecast_one"
     ).innerHTML = `${list_of_temperatures[0]}&deg;F`;
     document.querySelector("#forecast_img_one").src = list_of_images_src[0];
+    document
+      .getElementById("forecast_img_one")
+      .setAttribute("alt", list_of_images_desc[0]);
 
     document.querySelector(
       "#forecast_two"
@@ -73,19 +80,55 @@ fetch(apiURLforecast)
     document
       .querySelector("#forecast_img_two")
       .setAttribute("src", list_of_images_src[1]);
+    document
+      .getElementById("forecast_img_two")
+      .setAttribute("alt", list_of_images_desc[1]);
 
     document.querySelector(
       "#forecast_three"
     ).innerHTML = `${list_of_temperatures[2]}&deg;F`;
     document.querySelector("#forecast_img_three").src = list_of_images_src[2];
+    document
+      .getElementById("forecast_img_three")
+      .setAttribute("alt", list_of_images_desc[2]);
 
     document.querySelector(
       "#forecast_four"
     ).innerHTML = `${list_of_temperatures[3]}&deg;F`;
     document.querySelector("#forecast_img_four").src = list_of_images_src[3];
+    document
+      .getElementById("forecast_img_four")
+      .setAttribute("alt", list_of_images_desc[3]);
 
     document.querySelector(
       "#forecast_five"
     ).innerHTML = `${list_of_temperatures[4]}&deg;F`;
     document.querySelector("#forecast_img_five").src = list_of_images_src[4];
+    document
+      .getElementById("forecast_img_five")
+      .setAttribute("alt", list_of_images_desc[4]);
   });
+
+let date = new Date();
+let day = date.getDay();
+console.log(day);
+let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+let day_indexes = [day - 1, day, day + 1, day + 2, day + 3];
+let correct_index = function (day) {
+  if (day > 6) {
+    day = day - 7;
+  }
+  return day;
+};
+day_index_correct = day_indexes.map(correct_index);
+console.log(day_index_correct);
+
+document.querySelector("#day1").innerHTML = days[day_index_correct[0]];
+
+document.querySelector("#day2").innerHTML = days[day_index_correct[1]];
+
+document.querySelector("#day3").innerHTML = days[day_index_correct[2]];
+
+document.querySelector("#day4").innerHTML = days[day_index_correct[3]];
+
+document.querySelector("#day5").innerHTML = days[day_index_correct[4]];
