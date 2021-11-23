@@ -1,0 +1,43 @@
+@media only screen and (min-width: 60em) {
+  h1 {
+    font-size: 3.2em;
+  }
+  .summary {
+    top: 50px;
+    left: 50px;
+    width: 300px;
+    padding: 10px;
+  }
+  .flex-col img {
+    width: 100px;
+  }
+  .imgarticle {
+    width: 500px;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .gallery img:hover {
+    box-shadow: 0 0 50px #333;
+  }
+  form {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2px;
+  }
+  #youtubebox {
+    width: 800px;
+    height: 500px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1100px;
+  }
+  .cards section {
+    display: block;
+    width: 85%;
+  }
+}

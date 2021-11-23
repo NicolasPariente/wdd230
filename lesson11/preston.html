@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Assignment Preston Home Page for Nicolas Pariente in WDD 230: Web Frontend Development at Brigham Young University - Idaho" />
+    <!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">-->
+    <title>Preston Page BYUI</title>
+    <!--
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Open+Sans&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/small.css" />
+    <link rel="stylesheet" type="text/css" href="css/medium.css" />
+    <link rel="stylesheet" type="text/css" href="css/large.css" />
+</head>
+  <body>
+   <div class="friday"><h2 class="friday2">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</h2></div>
+    <header>
+        <img id="logo-image" src="images/weatherdownpour.jpg" alt="logo">
+        <div id="title">
+        <h1 class="title">Weather Downpour</h1>
+        <h3 class="title"> Unites borders</h3>
+        <!-- I commented that part because the motto is in the logo image-->
+        </div>
+      </header>
+      <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; MENU</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a class="active" href="preston.html">PRESTON</a></li>
+            <li><a href="#">SODA SPRING</a></li>
+            <li><a href="#">FISH HAVEN</a></li>
+            <li><a href="stormcenter.html">STORM CENTER</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+        </ul>
+      </nav>
+    <main>
+      <h2>Preston Idaho</h2>
+      <div class="banner">
+        <picture>
+        <source media="(max-width: 200px)" srcset="images/country200.jpg">
+        <source media="(max-width: 500px)" srcset="images/country500.jpg">
+        <source media="(max-width: 800px)" srcset="images/country800.jpg">
+        <img class="hero" src="images/country1600.jpg" alt="hero">
+      </picture>
+      
+        <div class="summary">
+          <h3 id="summary_title">
+            Weather Summary
+          </h3>
+          <p class="weather_paragraph">Currently: <span class="condition"></span></p>
+          <p class="weather_paragraph">High: <span class="high"></span> &deg;F</p> 
+          <p class="weather_paragraph">Wind Chill: <span class="chill"></span>&deg;F</p> 
+          <p class="weather_paragraph">Humidity: <span class="humidity"></span>%</p>
+          <p class="weather_paragraph">Wind Speed: <span class="speed"></span> mph</p>
+        </div>
+      </div>
+      <h3 class="forecast">Five Day Forecast</h3>
+
+      <div class="flex">
+        <div class="flex-col">
+          <span id="day1" class="col-head">Wed</span>
+          <img src="#" id="forecast_img_one" alt="">
+          <span class="data" id="forecast_one"></span>
+        </div>
+        <div class="flex-col">
+          <span id="day2" class="col-head">Thu</span>
+          <img src="#" id="forecast_img_two" alt="">
+          <span class="data" id="forecast_two"></span>
+        </div>
+        <div class="flex-col">
+          <span id="day3" class="col-head">Fri</span>
+          <img src="#" id="forecast_img_three" alt="">
+          <span class="data" id="forecast_three"></span>
+        </div>
+        <div class="flex-col">
+          <span id="day4" class="col-head">Sat</span>
+          <img src="#" id="forecast_img_four" alt="">
+          <span class="data" id="forecast_four"></span>
+        </div>
+        <div class="flex-col">
+          <span id="day5" class="col-head">Sun</span>
+          <img src="#" id="forecast_img_five" alt="">
+          <span class="data" id="forecast_five"></span>
+        </div>
+      </div>
+      <div class="article">
+        
+          <h3>
+            Breathing Sun</h3>
+            <img class="imgarticle" src="images/laptop-gb9665f843_640.jpg" alt="">
+          <p class="articule_par">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non reprehenderit 
+            cum sit minima atque mollitia, veniam reiciendis eos ex harum consectetur quisquam 
+            quas voluptatem veritatis at iusto incidunt fugiat dolor.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla nemo voluptas repudiandae, 
+            ea at reiciendis eius dolore cum esse natus labore sint soluta deserunt perspiciatis inventore 
+            quisquam. Ut, consequuntur ipsum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas 
+            laborum necessitatibus ipsum esse dignissimos quasi quae molestiae similique ullam odio eius eum vel 
+            placeat animi, minima officia veritatis quos modi. Lorem ipsum dolor sit amet, consectetur adipisicing
+             elit. Culpa impedit, maxime repellendus quod distinctio voluptate officia est! Magnam, ex reprehenderit. 
+             Odit saepe consequuntur quo ducimus assumenda officiis voluptates inventore possimus?
+          </p>
+        
+      </div>
+      <div class="map">
+        <div class="map_img">
+          <img src="images/preston_map.jpg" alt="preston-map">
+        </div>
+        <div class="map_info">
+          <h3>Contact Information</h3>
+          <p>+598 91854 775</p>
+          <p>hnpf2019@gmail.com</p>
+          <p></p>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <p>&copy;<span class="year"></span>|Nicolas Pariente|Uruguay|<a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
+        <p><span id="modify"></span></p>
+        <p>Source: <a href="https://openweathermap.org/">https://openweathermap.org/</a> </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="js/windchill.js"></script>
+  </body>
+</html>

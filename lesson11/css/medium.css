@@ -1,0 +1,167 @@
+@media only screen and (min-width: 32.5em) {
+  header {
+    height: 150px;
+  }
+  main {
+    max-width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  h1 {
+    font-size: 2.4em;
+    margin-top: 50px;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  .navigation {
+    display: flex;
+  }
+  .navigation li {
+    display: block; /* change state in small view */
+    flex: 1 1 auto;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+  .main-part {
+    font-size: 1.5em;
+    height: 30px;
+  }
+  .summary {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+    padding: 5px;
+  }
+  .flex {
+    display: flex;
+  }
+  .forecast {
+    display: block;
+    text-align: center;
+    margin: 20px;
+  }
+  .article {
+    width: 900px;
+    max-width: 85%;
+  }
+
+  .imgarticle {
+    width: 300px;
+    max-width: 100%;
+    float: right;
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  .map {
+    display: flex;
+    max-width: 90%;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .map_img {
+    flex: 1 1 auto;
+    max-width: 100%;
+  }
+  .map_img img {
+    max-width: 100%;
+  }
+  .map_info {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  .map_info h3 {
+    margin-top: 30px;
+    color: black;
+  }
+  .map_info p {
+    margin-top: 30px;
+    color: black;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  form {
+    padding: 5px;
+  }
+  form fieldset {
+    margin: 1rem 1rem;
+    padding: 0.5rem 10%;
+  }
+  form label.top input,
+  form label.top select {
+    width: 100%;
+    max-width: 35rem;
+  }
+  form label.sbs {
+    padding: 0.25rem 0;
+  }
+  form input.submitBtn {
+    padding: 0.75rem 1.5rem;
+    margin-top: 10px;
+    margin-left: 32%;
+    width: 250px;
+    height: 70px;
+    max-width: 20rem;
+    font-size: 2em;
+    background-color: #9c2c13;
+  }
+  form input.submitBtn:hover {
+    width: 255px;
+    height: 72px;
+    margin-top: 8px;
+    margin-left: 31.8%;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: #eb3b14;
+  }
+  form legend {
+    font-size: 2em;
+  }
+  #youtubebox {
+    width: 800px;
+    height: 400px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 1200px;
+  }
+  .cards section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 5%;
+  }
+  .cards section h2,
+  h3,
+  h4 {
+    grid-column: 1/2;
+  }
+  .cards section img {
+    grid-column: 2/3;
+    grid-row: 1/6;
+  }
+  .cards section:nth-child(even) h2,
+  .cards section:nth-child(even) h3,
+  .cards section:nth-child(even) h4 {
+    grid-column: 2/3;
+  }
+  .cards section:nth-child(even) img {
+    grid-column: 1/2;
+    grid-row: 1/6;
+  }
+}
