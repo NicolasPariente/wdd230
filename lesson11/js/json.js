@@ -33,6 +33,7 @@ fetch(requestURL)
     let img = document.createElement("img");
     let src = `images/${towns[2].photo}`;
     img.setAttribute("src", src);
+    img.setAttribute("alt", "fish heaven image");
     card.appendChild(img);
 
     document.querySelector("div.cards").appendChild(card);
@@ -63,6 +64,7 @@ fetch(requestURL)
     src = `images/${towns[6].photo}`;
     console.log(src);
     img.setAttribute("src", src);
+    img.setAttribute("alt", "preston image");
     card2.appendChild(img);
 
     document.querySelector("div.cards").appendChild(card2);
@@ -93,6 +95,7 @@ fetch(requestURL)
     src = `images/${towns[0].photo}`;
     console.log(src);
     img.setAttribute("src", src);
+    img.setAttribute("alt", "soda springs image");
     card3.appendChild(img);
 
     document.querySelector("div.cards").appendChild(card3);
