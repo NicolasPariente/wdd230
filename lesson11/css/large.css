@@ -40,4 +40,10 @@
     display: block;
     width: 85%;
   }
+  .social-media {
+    width: 70%;
+  }
+  .contact {
+    width: 50%;
+  }
 }

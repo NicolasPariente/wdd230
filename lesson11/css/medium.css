@@ -164,4 +164,7 @@
     grid-column: 1/2;
     grid-row: 1/6;
   }
+  .social-media-index {
+    width: 50%;
+  }
 }

@@ -213,6 +213,10 @@ main {
 .map_info {
   display: block;
   text-align: center;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgb(241, 241, 241);
+  margin-left: 2%;
+  margin-top: 1%;
 }
 .map_info h3 {
   margin-top: 30px;
@@ -470,4 +474,41 @@ form label.top input:required:valid {
 }
 .info p {
   color: #333;
+}
+/*css for the social media contact */
+.social-media {
+  display: grid;
+  width: 90%;
+  max-width: 90%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+.social-media img {
+  max-width: 100%;
+  width: 100%;
+  filter: grayscale(100%);
+}
+.social-media img:hover {
+  filter: grayscale(0%);
+}
+.contact {
+  width: 90%;
+  margin: 0 auto;
+}
+.social-media-index {
+  display: grid;
+  width: 70%;
+  max-width: 90%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+.social-media-index img {
+  max-width: 100%;
+  width: 100%;
+  filter: grayscale(100%);
+}
+.social-media-index img:hover {
+  filter: grayscale(0%);
 }
