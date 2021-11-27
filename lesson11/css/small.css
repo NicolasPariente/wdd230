@@ -137,6 +137,10 @@ main {
   color: black;
   font-weight: bold;
 }
+.weather_paragraph2 {
+  color: #d6d3d3;
+  font-weight: bold;
+}
 #summary_title {
   font-size: 1.5em;
 }
@@ -511,4 +515,14 @@ form label.top input:required:valid {
 }
 .social-media-index img:hover {
   filter: grayscale(0%);
+}
+/*css for the events*/
+.events {
+  text-align: center;
+  background-color: rgb(231, 197, 182);
+  width: 850px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 3%;
+  margin-top: 15px;
 }

@@ -30,32 +30,32 @@
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; MENU</a></li>
             <li><a href="index.html">HOME</a></li>
-            <li><a class="active" href="preston.html">PRESTON</a></li>
-            <li><a href="#">SODA SPRING</a></li>
-            <li><a href="#">FISH HAVEN</a></li>
+            <li><a href="preston.html">PRESTON</a></li>
+            <li><a class="active" href="sodaspring.html">SODA SPRING</a></li>
+            <li><a href="fishheaven.html">FISH HAVEN</a></li>
             <li><a href="stormcenter.html">STORM CENTER</a></li>
             <li><a href="gallery.html">GALLERY</a></li>
         </ul>
       </nav>
     <main>
-      <h2>Preston Idaho</h2>
+      <h2>Soda Spring</h2>
       <div class="banner">
         <picture>
         <source media="(max-width: 200px)" srcset="images/country200.jpg">
         <source media="(max-width: 500px)" srcset="images/country500.jpg">
         <source media="(max-width: 800px)" srcset="images/country800.jpg">
-        <img class="hero" src="images/country1600.jpg" alt="hero">
+        <img class="hero" src="images/soda1600.jpg" alt="hero">
       </picture>
       
         <div class="summary">
           <h3 id="summary_title">
             Weather Summary
           </h3>
-          <p class="weather_paragraph">Currently: <span class="condition"></span></p>
-          <p class="weather_paragraph">High: <span class="high"></span> &deg;F</p> 
-          <p class="weather_paragraph">Wind Chill: <span class="chill"></span>&deg;F</p> 
-          <p class="weather_paragraph">Humidity: <span class="humidity"></span>%</p>
-          <p class="weather_paragraph">Wind Speed: <span class="speed"></span> mph</p>
+          <p class="weather_paragraph2">Currently: <span class="condition"></span></p>
+          <p class="weather_paragraph2">High: <span class="high"></span> &deg;F</p> 
+          <p class="weather_paragraph2">Wind Chill: <span class="chill"></span>&deg;F</p> 
+          <p class="weather_paragraph2">Humidity: <span class="humidity"></span>%</p>
+          <p class="weather_paragraph2">Wind Speed: <span class="speed"></span> mph</p>
         </div>
       </div>
       <h3 class="forecast">Five Day Forecast</h3>
@@ -105,6 +105,9 @@
           </p>
         
       </div>
+      <section class="events">
+        <h2>Upcoming Events</h2>
+      </section>
       <div class="map">
         <div class="map_img">
           <img src="images/preston_map.jpg" alt="preston-map">
@@ -113,7 +116,12 @@
           <h3>Contact Information</h3>
           <p>+598 91854 775</p>
           <p>hnpf2019@gmail.com</p>
-          <p></p>
+          <div class="social-media">
+            <a href="https://www.facebook.com/" target="_blank"><img id="facebook-logo"src="images/facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img id="instagram-logo" src="images/instagram.png" alt="instagram"></a>
+            <a href="https://twitter.com/?lang=en" target="_blank"><img id="twitter-logo" src="images/twitter.png" alt="twitter"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img id="yotube-logo" src="images/yt.png" alt="youtube"></a>
+          </div>
         </div>
       </div>
     </main>
@@ -125,6 +133,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script src="js/webfont.js"></script>
     <script src="js/javascript.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="js/windchill2.js"></script>
+    <script src="js/eventSoda.js"></script>
   </body>
 </html>
