@@ -138,11 +138,15 @@ main {
   font-weight: bold;
 }
 .weather_paragraph2 {
-  color: #d6d3d3;
+  color: #e9e3e3;
   font-weight: bold;
 }
 #summary_title {
   font-size: 1.5em;
+}
+#summary_title2 {
+  font-size: 1.5em;
+  color: #fff3ee;
 }
 .flex {
   display: none;
@@ -464,6 +468,7 @@ form label.top input:required:valid {
 .cards section h3 {
   margin-top: 20px;
   color: black;
+  font-family: "Open Sans", sans-serif;
 }
 .cards section img {
   max-width: 100%;
@@ -521,8 +526,13 @@ form label.top input:required:valid {
   text-align: center;
   background-color: rgb(231, 197, 182);
   width: 850px;
-  max-width: 90%;
+  max-width: 85%;
   margin: 0 auto;
   padding: 3%;
   margin-top: 15px;
+  border: 10px solid #e65106;
+  padding-top: 0;
+}
+.events h3 {
+  font-family: "Open Sans", sans-serif;
 }
