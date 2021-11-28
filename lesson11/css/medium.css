@@ -41,6 +41,13 @@
     width: 300px;
     padding: 5px;
   }
+  .summary2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 300px;
+    padding: 5px;
+  }
   .flex {
     display: flex;
   }
@@ -48,6 +55,7 @@
     display: block;
     text-align: center;
     margin: 20px;
+    margin-top: 50px;
   }
   .article {
     width: 900px;

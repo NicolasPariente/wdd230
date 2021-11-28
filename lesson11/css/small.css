@@ -133,6 +133,10 @@ main {
   text-align: center;
   background-color: rgba(218, 108, 18, 0.2);
 }
+.summary2 {
+  text-align: center;
+  background-color: rgba(245, 245, 245, 0.4);
+}
 .weather_paragraph {
   color: black;
   font-weight: bold;
@@ -535,4 +539,11 @@ form label.top input:required:valid {
 }
 .events h3 {
   font-family: "Open Sans", sans-serif;
+}
+.linkweather {
+  word-break: break-all;
+}
+.article h3 {
+  font-size: 1.6em;
+  margin-bottom: 5px;
 }

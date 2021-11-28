@@ -3,4 +3,4 @@ var i = 0;
 setInterval(function () {
   document.querySelector(".events").style.background = colors[i];
   i = i == colors.length - 1 ? 0 : i + 1;
-}, 800);
+}, 500);
