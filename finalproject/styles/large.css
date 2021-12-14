@@ -1,0 +1,21 @@
+@media only screen and (min-width: 60em) {
+  header {
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 180px;
+  }
+  .logo {
+    margin-left: 30%;
+  }
+  nav {
+    margin: 0 auto;
+    background-color: #ffffff;
+  }
+  .navigation a {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0.5rem;
+  }
+  .navigation li {
+    margin-right: 3%;
+  }
+}
