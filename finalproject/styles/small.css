@@ -2,6 +2,14 @@
 body {
   width: 100%;
 }
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+p {
+  font-family: "Lato", sans-serif;
+}
 header {
   display: grid;
   grid-template-columns: 1fr;
@@ -15,6 +23,19 @@ header {
   width: 80%;
   margin: 0 auto;
 }
+footer {
+  background-color: rgb(226, 224, 224);
+  width: 100%;
+  margin-top: 50px;
+  height: 200px;
+  bottom: 0px;
+  text-align: center;
+  padding-top: 20px;
+}
+footer p {
+  font-size: 1.3em;
+  font-weight: 800;
+}
 /*css specificaly for the nav*/
 
 nav {
@@ -22,70 +43,238 @@ nav {
   margin-top: 0;
   width: 100%;
   max-width: 100%;
-  margin: 0px;
-  background-color: #6eeb83;
+  background-color: #0f1e3f;
+  padding: 0;
 }
 .navigation {
   list-style: none;
   padding: 0;
-  max-width: 100%;
+  width: 100%;
+  margin: 0;
 }
 .navigation li:first-child {
   display: block;
 }
 .navigation li {
   display: none;
-  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 .navigation a {
   display: block;
   padding: 0.75rem;
   text-align: left;
   text-decoration: none;
-  /*font-size: 1.2em;*/
-  font-size: 1.2em;
-  color: black;
-  font-weight: 525;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
   transition: 0.5s;
   font-family: "Open Sans", sans-serif;
-  width: 100%;
 }
 .navigation a:hover {
-  color: white;
-  background-color: black;
+  color: rgb(0, 0, 0);
+  background-color: #ffdd00;
 }
-nav ul {
-  margin: 0px;
-}
+
 .responsive li {
   display: block;
 }
 /*css for the banner*/
 .banner {
   display: grid;
-  grid-template-columns: 5fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 150px;
+  max-width: 100%;
+  width: 100%;
+  background-color: #1976d2;
+}
+.chamberbanner {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+.bannertext h1 {
+  font-family: "Corinthia", cursive;
+  text-align: center;
+  margin-top: 5%;
+  font-size: 1.8em;
+  color: white;
+}
+/*css for the advertisements*/
+.advertisement-one {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 5px solid white;
+}
+.advertisement-two {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: 5px solid white;
+}
+.advertisement-three {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10px;
+  border: 5px solid white;
+}
+video {
+  width: 100%;
+}
+.advertisement-text {
+  text-align: center;
+  padding: 10px;
+  background-color: #fcfcec;
+  font-size: 1em;
+}
+.advertisement-text-two {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0fbf9;
+  font-size: 1em;
+}
+.advertisement-text-three {
+  text-align: center;
+  padding: 10px;
+  background-color: #fcfcec;
+  font-size: 1em;
+}
+.advertisement-two img,
+.advertisement-three img {
   max-width: 100%;
   width: 100%;
 }
-.chamberbanner {
+
+.advertisement-text h2,
+.advertisement-text-two h2,
+.advertisement-text-three h2 {
+  font-family: "Lato", sans-serif;
+}
+/*css for the chamber and contact info*/
+.chamberandcontact {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+
+  gap: 10px;
+}
+.chamber {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  text-align: center;
+}
+.chamber img {
+  max-width: 100%;
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.chamber ul {
+  margin-left: 10%;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  font-size: 1.3em;
+}
+.chamber a {
+  text-decoration: none;
+  margin: 0 auto;
+}
+.chamber a h2 {
+  background-color: white;
+  padding-left: 15px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  width: 30px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  color: black;
+  border: 2px solid black;
+}
+.chamber a h2:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.contact {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.contact h3 {
+  font-size: 1.7em;
+}
+.contact p {
+  font-size: 1.5em;
+}
+.social-media {
+  display: grid;
+  width: 75%;
+  max-width: 90%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+.social-media img {
+  max-width: 100%;
+  width: 100%;
+  filter: grayscale(100%);
+}
+.social-media img:hover {
+  filter: grayscale(0%);
+}
+/*css for the weather*/
+.weather {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 50%;
+  margin-left: 15%;
+  margin-top: 40px;
+}
+.current {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+}
+.current p {
+  font-size: 1.4em;
+  font-weight: 800;
+}
+.current img {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+.flex {
+  width: 100%;
   max-width: 100%;
 }
-/*weather pannel*/
 .flex {
-  display: none;
-  /* flex-direction: row; */
-  /* let us combine row and wrap with flow */
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   border-right: 1px solid #333;
-  margin-left: 50px;
-  margin-right: 50px;
 }
 .flex-col {
   flex: 1 1 auto;
-  background-color: #bed;
+  background-color: rgb(227, 240, 235);
   border-bottom: 1px solid #333;
   border-left: 1px solid #333;
   text-align: center;
+  font-weight: 800;
 }
 .col-head {
   display: block;
@@ -95,19 +284,70 @@ nav ul {
   text-align: center;
   font-weight: 700;
   font-size: 1rem;
-  background-color: #076ae1;
+  background-color: #1976d2;
   color: white;
 }
 .flex-col img {
-  width: 70px;
+  width: 100px;
 }
-.data {
-  display: block;
-  padding: 0 5px 5px;
-  font-size: 0.8rem;
+/*css for the events and for the container or the weather and the events*/
+.weatherandevents {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 90%;
+  margin-top: 40px;
+}
+.events {
+  padding: 5%;
   text-align: center;
-  font-weight: bold;
+  margin-top: 10%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.forecast {
-  display: none;
+.events h2 {
+  word-break: break-all;
+}
+.events ul {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4em;
+}
+.events li {
+  margin-top: 20px;
+}
+/*css for the banner of the city page*/
+.banner2 {
+  background-color: #000000;
+}
+.bannertext2 h1 {
+  color: rgb(255, 255, 255);
+}
+main {
+  text-align: center;
+}
+/*css for the places to visit*/
+.placestovisit {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5%;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  max-height: 100%;
+}
+.placestoevents {
+  grid-template-columns: 1fr;
+  margin-top: 20px;
+}
+.placestovisit img {
+  max-width: 400px;
+  width: 100%;
+}
+.placestovisit div {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 5%;
+}
+.placestovisit p {
+  font-size: 1.4em;
+}
+.titlevents {
+  margin-top: 200px;
 }

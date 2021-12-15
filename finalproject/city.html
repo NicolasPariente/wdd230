@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Final Project Home Page for Nicolas Pariente in WDD 230: Web Frontend Development at Brigham Young University - Idaho" />
+    <title>Nicolas Webpage for BYUI</title>
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="styles/small.css" />
+    <link rel="stylesheet" type="text/css" href="styles/medium.css" />
+    <link rel="stylesheet" type="text/css" href="styles/large.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Lato:ital,wght@1,300&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <header>
+        <img src="images/logo.png" class="logo" alt="logo">
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; MENU</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="preston.html">MELO</a></li>
+                <li><a href="sodaspring.html">DIRECTORY</a></li>
+                <li><a href="stormcenter.html">JOIN</a></li>
+                <li><a class="active" href="gallery.html">CONTACT</a></li>
+            </ul>
+      </header>
+    <main>
+        <div class="banner banner2">
+            <picture>
+              <source media="(max-width: 200px)" srcset="images/riverapark200.jpg">
+              <source media="(max-width: 500px)" srcset="images/riverapark500.jpg">
+              <source media="(max-width: 800px)" srcset="images/riverapark800.jpg">
+              <img class="chamberbanner" src="images/riverapark.jpg" alt="chamberbanner">
+            </picture>
+              <div class="bannertext bannertext2">
+                <h1>Get <br>to know <br> the city</h1>
+              </div> 
+          </div>
+          <h1>Melo has beautiful places you can visit!!! </h1>
+          <section class="placestovisit">
+            <div>
+              <img src="images/juanashouse.jpg" alt="juanashouse">
+              <h2>"Juana's House"</h2>
+              <p>Juana Fernández Morales de Ibarbourou, also known as Juana de América, (March 8, 1892 July 15, 1979 in Melo) was a Uruguayan poet and one of the most popular poets of Spanish America. Her poetry, the earliest of which is often highly erotic, is notable for her identification of her feelings with nature around her. She was nominated for the Nobel Prize in Literature four times. Her house is open to visit!!!</p>
+            </div>
+            <div>
+              <img src="images/merin.jpg" alt="lagunamerin">
+              <h2>"Laguna Merin"</h2>
+              <p>"Laguna Merin" is a big Lake that is located a few kilometers from our city. The significant waves that this lake has can make people mistake thinking is the coast of the ocean.</p>
+            </div>
+            <div>
+              <img src="images/independencia.png" alt="independencia">
+              <h2>"Independencia" Square</h2>
+              <p>Squares were the first places to be built when cities were created. Visiting "Independencia" square you will see a beautiful water foutain. Also you can admire the old bulidings that are around the square like the Cathedral.</p>
+            </div>
+          </section>
+          <div class="titlevents">
+          <h1 >And it's also known by the incredible events that are organized here</h1>
+        </div>
+          <section class="placestovisit placestoevents">
+            <div>
+              <img src="images/motorbike.jpg" alt="motorbike">
+              <h2>"Motorbike Meeting"</h2>
+              <p>Melo is famouse for the Motorbike meeting. It is an event that happens onces a year and people from all over the country and also from other countries come to show their incredible motorbikes. There are competitions and amazing motorbikes demonstrations. You need to put this event in yout bucket list!!!</p>
+            </div>
+            <div>
+              <img src="images/show.jpg" alt="show">
+              <h2>"Dance"</h2>
+              <p>Maybe you do not really like motorbikes... So go dancing!!! Here you have a lot of posibilities to go out friday's night. "Don Quijote" is one of the most famous. But you also have "Charlie", "Milllenium" and more.</p>
+            </div>
+          </section>
+    </main>
+    <footer>
+        <p>&copy;<span class="year"></span>|Nicolas Pariente|Uruguay|<a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
+        <p>Last Updated: <span id="modify"></span></p>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/changecolor.js"></script>
+  </body>
+</html>
