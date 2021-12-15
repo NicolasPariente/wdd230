@@ -1,0 +1,67 @@
+{
+    "business": [
+      {
+        "name": "Arachanitas",
+        "photo": "images/arachanitas.jpg",
+        "description":"The best patty in the town",
+        "contact": [
+          "Open: Monday to Saturday",
+          "Dir: Mata St."
+        ]
+      },
+      {
+        "name": "Raidistas",
+        "photo": "images/raidistas.jpg",
+        "description":"The best clothe in the town",
+        "contact": [
+          "Open: Monday to Saturday",
+          "Dir: Florencio Sanchez St."
+        ]
+      },
+      {
+        "name": "Flaber",
+        "photo": "images/flaber.jpg",
+        "description":"The best toys in the town",
+        "contact": [
+          "Open: Monday to Saturday",
+          "Dir: Saravia St."
+        ]
+      },
+      {
+        "name": "Abelar",
+        "photo": "images/abelar.jpg",
+        "description":"The best glasses in the town",
+        "contact": [
+          "Open: Monday to Saturday",
+          "Dir: Saravia St."
+        ]
+      },
+      {
+        "name": "Se Picó",
+        "photo": "images/sepico.jpg",
+        "description":"The best meal in the town",
+        "contact": [
+          "Open: Monday to Saturday",
+          "Dir: Saravia St."
+        ]
+      },
+      {
+        "name": "Route 66",
+        "photo": "images/route66.jpg",
+        "description":"The best clothe for teenagers in the town",
+        "contact": [
+          "Open: Monday to Saturday",
+          "Dir: Herrera St."
+        ]
+      },
+      {
+        "name": "La Higuera",
+        "photo": "images/lahiguera.jpg",
+        "description":"The best restaurant in the town",
+        "contact": [
+          "Open: Monday to Saturday",
+          "Dir: Route 8 km 402"
+        ]
+      }
+    ]
+  }

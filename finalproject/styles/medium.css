@@ -102,4 +102,51 @@
   .titlevents {
     margin-top: 100px;
   }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .cards2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  form {
+    padding: 5px;
+  }
+  form fieldset {
+    margin: 1rem 1rem;
+    padding: 0.5rem 10%;
+  }
+  form label.top input,
+  form label.top select {
+    width: 100%;
+    max-width: 35rem;
+  }
+  form label.sbs {
+    padding: 0.25rem 0;
+  }
+  form input.submitBtn {
+    padding: 0.75rem 1.5rem;
+    margin-top: 10px;
+    margin-left: 5%;
+    width: 250px;
+    height: 70px;
+    max-width: 20rem;
+    font-size: 2em;
+    background-color: #e4e296;
+    border: 2px solid black;
+    color: black;
+  }
+  form input.submitBtn:hover {
+    width: 255px;
+    height: 72px;
+    margin-top: 8px;
+    margin-left: 5%;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: #ffdd00;
+  }
+  form legend {
+    font-size: 2em;
+  }
 }

@@ -66,4 +66,18 @@
   .placestoevents {
     grid-template-columns: 1fr 1fr;
   }
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .cards2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  form {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2px;
+  }
 }

@@ -67,7 +67,7 @@ let correct_index = function (day) {
   return day;
 };
 day_index_correct = day_indexes.map(correct_index);
-console.log(day_index_correct);
+console.log(day_index_correct[1]);
 
 document.querySelector("#day1").innerHTML = days[day_index_correct[1]];
 
