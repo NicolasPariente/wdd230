@@ -78,4 +78,18 @@
   .social-media {
     width: 60%;
   }
+  .weather {
+    grid-template-columns: 3fr 1fr;
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 40px;
+  }
+  .current {
+    border-right: none;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .weatherandevents {
+    grid-template-columns: 3fr 1fr;
+  }
 }

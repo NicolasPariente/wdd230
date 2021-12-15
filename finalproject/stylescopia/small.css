@@ -23,6 +23,19 @@ header {
   width: 80%;
   margin: 0 auto;
 }
+footer {
+  background-color: rgb(226, 224, 224);
+  width: 100%;
+  margin-top: 50px;
+  height: 200px;
+  bottom: 0px;
+  text-align: center;
+  padding-top: 20px;
+}
+footer p {
+  font-size: 1.3em;
+  font-weight: 800;
+}
 /*css specificaly for the nav*/
 
 nav {
@@ -219,4 +232,84 @@ video {
 }
 .social-media img:hover {
   filter: grayscale(0%);
+}
+/*css for the weather*/
+.weather {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 50%;
+  margin-left: 15%;
+  margin-top: 40px;
+}
+.current {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+}
+.current p {
+  font-size: 1.4em;
+  font-weight: 800;
+}
+.current img {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+.flex {
+  width: 100%;
+  max-width: 100%;
+}
+.flex {
+  flex-flow: column wrap;
+  border-right: 1px solid #333;
+}
+.flex-col {
+  flex: 1 1 auto;
+  background-color: rgb(227, 240, 235);
+  border-bottom: 1px solid #333;
+  border-left: 1px solid #333;
+  text-align: center;
+  font-weight: 800;
+}
+.col-head {
+  display: block;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #333;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: #1976d2;
+  color: white;
+}
+.flex-col img {
+  width: 100px;
+}
+/*css for the events and for the container or the weather and the events*/
+.weatherandevents {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 90%;
+  margin-top: 40px;
+}
+.events {
+  padding: 5%;
+  text-align: center;
+  margin-top: 10%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.events h2 {
+  word-break: break-all;
+}
+.events ul {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4em;
+}
+.events li {
+  margin-top: 20px;
 }
