@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Final Project Contact Page for Nicolas Pariente in WDD 230: Web Frontend Development at Brigham Young University - Idaho" />
+    <title>Nicolas Webpage for BYUI</title>
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="styles/small.css" />
+    <link rel="stylesheet" type="text/css" href="styles/medium.css" />
+    <link rel="stylesheet" type="text/css" href="styles/large.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Lato:ital,wght@1,300&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <header>
+        <img src="images/logo.png" class="logo" alt="logo">
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; MENU</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="city.html">MELO</a></li>
+                <li><a href="directory.html">DIRECTORY</a></li>
+                <li><a href="join.html">JOIN</a></li>
+                <li><a class="active" href="contact.html">CONTACT</a></li>
+            </ul>
+            </nav>
+      </header>
+    <main>
+        <div class="banner banner2">
+            <picture>
+              <source media="(max-width: 200px)" srcset="images/chamberbanner200.jpg">
+              <source media="(max-width: 500px)" srcset="images/chamberbanner500.jpg">
+              <source media="(max-width: 800px)" srcset="images/chamberbanner800.jpg">
+              <img class="chamberbanner" src="images/together.jpg" alt="chamberbanner">
+            </picture>
+              <div class="bannertext">
+                <h1>We are <br>willing to <br> hear from you</h1>
+              </div>
+              
+          </div>
+          <form method="get" action="thanks2.html" onSubmit="return check_Alpha(this)" id="form">
+            <fieldset>
+                <label class="top">FullName*<input type="text" name="name" required></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top">Phone<input type="tel" name="phone" placeholder="123456789"></label>
+                <label class="top">Comments: </label>
+                <textarea name="textarea" id="comment" cols="30" rows="10"></textarea>
+            </fieldset>
+
+            <input class="submitBtn" type="submit" value="Send">
+        </form>
+        <div class="chamberandcontact">
+            <div class="chamber">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d32059.044757250682!2d-54.14793315121569!3d-32.371125561841936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suy!4v1639555387203!5m2!1sen!2suy"  allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="contact">
+              <h3>Contact Information</h3>
+              <p>Tel: +598 91854 775</p>
+              <p>Email: hnpf2019@gmail.com</p>
+              <div class="social-media">
+                <a href="https://www.facebook.com/" target="_blank"><img id="facebook-logo" src="images/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img id="instagram-logo" src="images/instagram.png" alt="instagram"></a>
+                <a href="https://twitter.com/?lang=en" target="_blank"><img id="twitter-logo" src="images/twitter.png" alt="twitter"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img id="yotube-logo" src="images/yt.png" alt="youtube"></a>
+              </div>
+            </div>
+    
+          </div>
+          <h2 class="board">Board of Directors</h2>
+          <section class="directors">
+            <img src="images/me.jpg" alt="me">
+            <h3>General Director: Nicolas Pariente</h3>
+            <img src="images/businessman.jpg" alt="businessman">
+            <h3>Ejecutive Director: Gerard Gallardo</h3>
+            <img src="images/businesswoman.jpg" alt="businesswoman">
+            <h3>Administrative Director: Yohana Snider</h3>
+          </section>
+    </main>
+    <footer id="footer">
+        <p>&copy;<span class="year"></span>|Nicolas Pariente|Uruguay|<a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning</a></p>
+        <p>Last Updated: <span id="modify"></span></p>
+        <p>Attribution:<a href="attributions.html"> Attributions Page</a></p>
+    </footer>
+    <script src="scripts/script.js"></script>
+ 
+  </body>
+</html>

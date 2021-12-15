@@ -19,6 +19,7 @@ fetch(requestURL)
       let src = `${business[i].photo}`;
       console.log(`${business[i].photo}`);
       img.setAttribute("src", src);
+      img.setAttribute("alt", `${business[i].name}`);
       card.appendChild(img);
 
       let p = document.createElement("p");

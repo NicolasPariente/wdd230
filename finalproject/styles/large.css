@@ -80,4 +80,7 @@
     margin: 0 auto;
     padding: 2px;
   }
+  #footer {
+    margin-top: 0px;
+  }
 }
