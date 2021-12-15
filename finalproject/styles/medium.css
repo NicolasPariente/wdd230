@@ -152,4 +152,35 @@
   #footer {
     margin-top: 0px;
   }
+  .benefits {
+    font-family: "Lato", sans-serif;
+  }
+  #footer {
+    margin-top: 0;
+  }
+  /*css for the contact page*/
+  iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    max-height: 100%;
+  }
+  #form {
+    margin-bottom: 40px;
+  }
+  .directors {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 250px;
+    width: 90%;
+    margin: 0 auto;
+
+    row-gap: 5px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  .directors img {
+    max-width: 100%;
+    width: 100%;
+  }
 }
