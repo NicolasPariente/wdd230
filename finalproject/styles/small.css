@@ -559,7 +559,7 @@ iframe {
 }
 .directors {
   display: grid;
-  max-width: 300px;
+  max-width: 250px;
   width: 90%;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr;
